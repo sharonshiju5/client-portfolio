@@ -2,10 +2,11 @@ import React from 'react';
 import bg from "../assets/bg.jpg";
 import { motion } from 'framer-motion';
 import profile from "../assets/image01.jpg"
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function MainLayout() {
-
+    const navigate= useNavigate();
 
     return(
         <>
@@ -72,16 +73,16 @@ function MainLayout() {
            {/* Navigation Menu - Stack vertically on mobile */}
             <div className="mt-8 sm:mt-16 mb-6 sm:mb-8">
               <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
-                <button className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
+                <button onClick={()=>{navigate("/")}} className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
                   HOME
                 </button>
-                <button className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
+                <button onClick={()=>{navigate("/works")}} className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
                   WORKS
                 </button>
-                <button className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
+                <button onClick={()=>{navigate("/about")}} className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
                   ABOUT
                 </button>
-                <button className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
+                <button onClick={()=>{navigate("/contatct")}} className="px-6 sm:px-8 py-3 border border-white/30 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300 tracking-wider text-sm font-light">
                   CONTACT
                 </button>
               </div>
