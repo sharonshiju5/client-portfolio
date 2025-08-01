@@ -33,7 +33,8 @@ function MainLayout() {
            <div className="mb-6 sm:mb-12">
              <div className="w-70 h-70 sm:w-66 sm:h-66 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-100 xl:h-100 rounded-3xl sm:rounded-4xl overflow-hidden shadow-2xl">
                <img 
-                 src={profile} 
+                //  src={profile} 
+                src='https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg'
                  alt="Profile" 
                  className="w-full h-full object-cover grayscale"
                />
