@@ -45,7 +45,7 @@ function MainLayout() {
             {/* Name */}
 
             <div className="text-center mb-8 sm:mb-16">
-            <h1 style={{ fontFamily: 'Arial Black, Helvetica, sans-serif', fontStretch: 'condensed' }} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white tracking-widest sm:tracking-widest md:tracking-wider lg:tracking-[0.25em] leading-none sm:leading-tight">
+            <h1 style={{ fontFamily: 'Arial Black, Helvetica, sans-serif', fontStretch: 'condensed' }} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-black text-white tracking-widest sm:tracking-widest md:tracking-wider lg:tracking-[0.25em] leading-none sm:leading-tight">
                 <div className="block sm:inline">AKHIL</div>
                 <div className="block sm:inline sm:ml-9 md:ml-11 lg:ml-12">DAS</div>
             </h1>
